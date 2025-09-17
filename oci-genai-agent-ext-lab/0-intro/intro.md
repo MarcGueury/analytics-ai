@@ -16,8 +16,8 @@ We’ll be able to search documents like:
 - TIF files (FAX) using OCI Document Understanding
 - Word, Excel, Powerpoint, ... using OCI Functions
 - Websites using 
-  - a Crawler (for all pages of a websites, based on Sitemap or not) 
-  - or Selenium (for a fixed number of URLs)   
+    - a Crawler (for all pages of a websites, based on Sitemap or not) 
+    - or Selenium (for a fixed number of URLs)   
 
 The installation uses Terraform.
 
