@@ -16,8 +16,8 @@ We’ll be able to search documents like:
 - TIF files (FAX) using OCI Document Understanding
 - Word, Excel, Powerpoint, ... using OCI Functions
 - Websites using 
-    - a Crawler (for all pages of a website, based on Sitemap or not) 
-    - or Selenium (for a fixed number of URLs)   
+  - a Crawler (for all pages of a websites, based on Sitemap or not) 
+  - or Selenium (for a fixed number of URLs)   
 
 The installation uses Terraform.
 
@@ -55,8 +55,6 @@ Here's how various file types are processed.
 - If the file has the extension **.tif**, it is processed by OCI Document Understanding.
 - If the file has the extension **.json**, this is an output of the asynchronous AI services such as OCI Speech or OCI Document Understanding. 
 - If the file has the extension **.doc**, **.docx**, **.ppt**, **.pptx**, first convert it to PDF 
-- If the file has the extension **.selenium**, loop though the list of URLs, and save them as PDF
-- If the file has the extension **.crawler**, loop though the list of URLs or Sitemaps. Crawl (Visit each pages and links of these pages.)
 - All other file types like are sent to an OCI Function with a generic document parser.
 
 ### Physical Architecture

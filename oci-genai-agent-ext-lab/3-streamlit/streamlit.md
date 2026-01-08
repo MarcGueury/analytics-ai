@@ -32,12 +32,11 @@ Estimated time: 10 min
     |           |           | What is Document Understanding                    |
     | Word      | .docx     | What is OCI ?                                     |
     | Image     | .png      | List the countries in the map of brazil           |
-    | Crawler   | .crawler  | What are the top things to see in Spain.          |    
     | Website   | .selenium | What is Digital Assistant ?                       |
     | FAX       | .tif      | Is there an invoice for Optika ?                  | 
     |           |           | What does the file invoice.tif contains ?         |
     | Video     | .mp4      | What is Oracle Analytics                          | 
-    | Audio     | .mp3      | What is the issue with my headphones ?            | 
+    | Audio     | .mp3      | Summarize the audio file Voice_SupportRobot.mp3   | 
 
 
 ## Task 2: Optional - Test additional files

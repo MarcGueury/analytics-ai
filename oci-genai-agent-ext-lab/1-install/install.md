@@ -123,6 +123,12 @@ You can
     git clone https://github.com/mgueury/oci-genai-agent-ext.git
     </copy>
     ````
+7. Check if you have an Authorisation Token (associated with your profile).
+
+   For more info, see here: https://docs.oracle.com/en-us/iaas/Content/Registry/Tasks/registrygettingauthtoken.htm
+
+   If yes, note it in your notepad. If not, the script below will create it.
+
 7. Run each of the three commands below in the Terminal, one at a time. It will run Terraform to create the rest of the components.
     ```
     <copy>
@@ -146,6 +152,9 @@ You can
 
     ```
     <copy>    
+    -----------------------------------------------------------------------
+    TF_VAR_agent_endpoint_ocid=ocid1.xxxxx.xxxxx
+    
     -----------------------------------------------------------------------
     Streamlit:
     http://12.45.67.89:8080/
