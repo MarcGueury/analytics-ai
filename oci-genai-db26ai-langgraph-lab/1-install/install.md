@@ -119,7 +119,7 @@ You can
     ![Menu Compute](images/terraform1.png =50%x*)
     ````
     <copy>
-    git clone https://github.com/mgueury/oci-genai-db26ai-langgraph.git
+    git clone https://github.com/marcgueury/oci-genai-db26ai-langgraph.git
     </copy>
     ````
 7. (Optional). Enable OpenID login to the application.

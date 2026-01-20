@@ -60,7 +60,7 @@ Estimated time: 10 minutes
 
 1. Click on Application Builder.
 
-1. Choose the Application *AI_AGENT_RAG_ADMIN*
+1. Choose the Application *AI\_AGENT\_RAG\_ADMIN*
 
 1.  Click *Run Application*
 
@@ -79,10 +79,10 @@ Estimated time: 10 minutes
 ## Task 3. Explore other APEX apps.
 
 If you are familiar with APEX, do not hesitate to look at the other applications:
-- AI_AGENT_RAG (see task 1)
-- AI_AGENT_RAG_ADMIN (see task 2)
-- AI_AGENT_EVAL (allows you to test the quality of the agent)
-- AI_SUPPORT (allows you to edit and see the SR table used for the structured table case)
+- AI\_AGENT\_RAG (see task 1)
+- AI\_AGENT\_RAG\_ADMIN (see task 2)
+- AI\_AGENT\_EVAL (allows you to test the quality of the agent)
+- AI\_SUPPORT (allows you to edit and see the SR table used for the structured table case)
 
 ## Known issues
 

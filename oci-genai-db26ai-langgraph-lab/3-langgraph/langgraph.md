@@ -29,13 +29,13 @@ This is the architecture of the LangGraph application that we will use.
     Hover on the citation. Note that you can see the page number. Click on the link.
     ![Test Invoice](images/langgraph-invoice.png)    
 
-    The response will come from unstructured documents.
+    This response came from an unstructured documents (the file invoice.tif)
 
 1.  Type: "I have an issue with my luggage"
 
     ![Test Luggage](images/langgraph-luggage.png)    
 
-    The response will come from structured data (service request)
+    The response comes from structured data (service request). Ie, a record in the database SUPPORT_SR table.
 
 ## Task 2: Optional - Security 
 
