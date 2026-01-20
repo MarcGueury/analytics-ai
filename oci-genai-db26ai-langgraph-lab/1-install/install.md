@@ -128,7 +128,9 @@ You can
 
     Edit the file **starter/terraform.tfvars**. Uncomment the openid line:
     ```
+    <copy>
     openid="true" 
+    </copy>
     ```
 
 8. Run each of the commands below in the Terminal, one at a time. It will run Terraform to create the rest of the components.
@@ -271,6 +273,7 @@ You can
     If your user does not have the right to create a Dynamic Group in the Default Identity Domain, you will get this error:
      
     ```
+    <copy>
     Error: 400-BadErrorResponse,
     Suggestion: Please retry or contact support for help with service: Identity Domains Dynamic Resource Group
     Documentation: https://registry.terraform.io/providers/oracle/oci/latest/docs/resources/identity_domains_dynamic_resource_group
@@ -283,6 +286,7 @@ You can
     with oci_identity_domains_dynamic_resource_group.search-fn-dyngroup,
     on search_dyngroup_identity_domain.tf line 1, in resource “oci_identity_domains_dynamic_resource_group” “search-fn-dyngroup”:
     1: resource “oci_identity_domains_dynamic_resource_group” “search-fn-dyngroup” {
+    </copy>    
     ```
     Solution:
     1. If the Default Domain exists, it is probably a privilege issue. Ask your tenancy administrator.
@@ -290,7 +294,9 @@ You can
         - edit the file starter/terraform.tfvars 
         - add the line
         ```
+        <copy>
         idcs_domain_name="OracleIdentityCloudService"
+        </copy>
         ```
 
 6. Error: 400-LimitExceeded, The following service limits were exceeded: xxxxxxx
@@ -301,17 +307,21 @@ You can
 7. Error: Attempt to index null value
 
   ```
+  <copy>
   on datasource.tf line 64, in locals:
   64:   idcs_url = (var.idcs_url!="")?var.idcs_url:data.oci_identity_domains.starter_domains.domains[0].url
     ├────────────────
     │ data.oci_identity_domains.starter_domains.domains is null
+  </copy>
   ```
 
   Workaround:
   - This is due to lacking privileges to access the list of domains in your tenancy.
   - Edit file terraform.tfvars and add this line:
     ```
+    <copy>
     idcs_url=https://idcs-xxxxxx.identity.oraclecloud.com:443
+    </copy>
     ````
     You can find this URL by:
     - going to OCI Console / Hamburger menu / Identity and Security / Domains 

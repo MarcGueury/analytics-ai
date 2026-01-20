@@ -22,7 +22,7 @@ Estimated time: 10 minutes
 1. Type "when was jazz created?" and then press *Enter*
 
     Hover over the citation. Note that you can see the page number. Click on the link.
-    ![Test Jazz](../0-introl/images/when-was-jazz-created.png)    
+    ![Test Jazz](images/when-was-jazz-created.png)    
 
 1. Type "what is Oracle Analytics", then *Enter*
 
